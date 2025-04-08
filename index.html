@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link href="./output.css" rel="stylesheet">
+</head>
+<body class="h-[100vh]">
+<section>
+<header class="w-full flex items-center bg-sky-400 md:justify-around  justify-between h-24">
+  <div class="text-3xl font-bold md:block hidden">title</div>
+  <img class="w-20 h-20 rounded-full object-cover" src="/assets/images/ez.png" alt="">
+  <!-- on & off btn  -->
+   <div class="flex items-center space-x-4">
+     <label for="toggle1" class="cursor-pointer">
+      <div class="relative inline-block w-16 h-8">
+        <div tabindex="1" class=" inset-0 flex items-center justify-between p-1 bg-white rounded-full ">
+          <input type="checkbox" id="toggle" class="hidden peer absolute">
+          <span class="w-6 h-6 bg-sky-400 rounded-full  transition-all peer-checked:translate-x-8"></span>
+        </div>
+      </div>
+    </label>
+  </div>
+</header>
+<main class="w-full flex justify-between  h-full">
+  <section class="flex justify-center items-center flex-col">
+    <p class="font-bold text-4xl mt-10">title</p>
+    <!-- main box  -->
+    <div class="grid md:grid-cols-3 grid-cols-1 gap-5 md:w-[1000px] w-full md:h-[1000px] h-[100vh] mt-9">
+      <img class="col-span-1" src="/assets/images/ez.png" alt="">
+      <div class="md:col-span-2 col-span-1 bg-amber-500 p-10"></div>
+      <div class="col-sapn-1 bg-amber-800 p-10"></div>
+      <div class="col-sapn-1 bg-amber-300 flex items-center justify-center flex-col">
+        <img  src="/assets/images/ez.png" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur nobis tempora beatae rerum hic. Quae in sit quas nesciunt sunt!</p>
+        <button class="w-11 h-7 bg-zinc-600"> click</button>
+      </div>
+      <div class="col-sapn-1 bg-amber-800 p-10"></div>
+      <div class="col-sapn-1 bg-amber-800 p-10"></div>
+      <div class="col-sapn-1 bg-amber-800 p-10"></div>
+      <div class="col-sapn-1 bg-amber-800 p-10"></div>
+    </div>
+    <div class="md:w-[1000px] w-full h-[500px] bg-indigo-900 md:mt-5 mt-80 rounded-4xl"></div>
+  </section>
+  <label for="toggle">
+    <input type="checkbox" id="toggle1" class=" peer">
+    <nav class="w-0 h-[100vh] bg-gray-500 transition-all flex justify-center peer-checked:w-[300px] overflow-hidden">
+      <ul>
+        <a href=""><li class="mt-5">well played</li></a>
+        <a href=""><li class="mt-5">good game</li></a>
+        <a href=""><li class="mt-5">fast finish</li></a>
+      </ul>
+    </nav>
+  </label>
+</main>
+<footer class="h-24 flex justify-center items-center mt-4 bg-sky-400 font-bold text-3xl">bye</footer>
+</section>
+</body>
+</html>
