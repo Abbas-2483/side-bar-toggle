@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="/src/input.css">
   <link href="./output.css" rel="stylesheet">
 </head>
 <body class="h-[100vh]">
@@ -13,18 +14,18 @@
   <img class="w-20 h-20 rounded-full object-cover" src="/assets/images/ez.png" alt="">
   <!-- on & off btn  -->
    <div class="flex items-center space-x-4">
-     <label for="toggle1" class="cursor-pointer">
+     <label for="toggle" class="cursor-pointer">
       <div class="relative inline-block w-16 h-8">
         <div tabindex="1" class=" inset-0 flex items-center justify-between p-1 bg-white rounded-full ">
-          <input type="checkbox" id="toggle" class="hidden peer absolute">
+          <input type="checkbox" id="toggle" class="hidden peer absolute ">
           <span class="w-6 h-6 bg-sky-400 rounded-full  transition-all peer-checked:translate-x-8"></span>
         </div>
       </div>
     </label>
   </div>
 </header>
-<main class="w-full flex justify-between  h-full">
-  <section class="flex justify-center items-center flex-col">
+<main class="w-full flex  h-full">
+  <section class="flex justify-center items-center flex-col flex-1/2">
     <p class="font-bold text-4xl mt-10">title</p>
     <!-- main box  -->
     <div class="grid md:grid-cols-3 grid-cols-1 gap-5 md:w-[1000px] w-full md:h-[1000px] h-[100vh] mt-9">
@@ -43,8 +44,8 @@
     </div>
     <div class="md:w-[1000px] w-full h-[500px] bg-indigo-900 md:mt-5 mt-80 rounded-4xl"></div>
   </section>
-  <label for="toggle">
-    <input type="checkbox" id="toggle1" class=" peer">
+  <label for="toggle1">
+    <input type="checkbox" id="toggle1" class=" hidden peer">
     <nav class="w-0 h-[100vh] bg-gray-500 transition-all flex justify-center peer-checked:w-[300px] overflow-hidden">
       <ul>
         <a href=""><li class="mt-5">well played</li></a>
